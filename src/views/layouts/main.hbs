@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NodeJS SMS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css">
-    <link href="node_modules/text-security/text-security.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="main.css">
+    {{!-- <link href="node_modules/text-security/text-security.css" rel="stylesheet" type="text/css"> --}}
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
@@ -15,6 +15,11 @@
     <div class="container p-5">
         {{{body}}}
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.2/timeago.min.js"
+        integrity="sha512-sl01o/gVwybF1FNzqO4NDRDNPJDupfN0o2+tMm4K2/nr35FjGlxlvXZ6kK6faa9zhXbnfLIXioHnExuwJdlTMA=="
+        crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

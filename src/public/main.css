@@ -1,9 +1,0 @@
-/* input[type="tel"] {
-  font-family: text-security-disc;
-  -webkit-text-security: disc;
-} */
-
-.scroll {
-  overflow-y: scroll;
-  max-height: 80%;
-}

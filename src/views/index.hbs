@@ -13,14 +13,17 @@
     <div class="col-md-8">
 
         {{#if messages}}
-        <div class="card card-body scroll">
+        <ul class="list-group scroll" id="messages">
             {{#each messages}}
-            <div class="card card-body">
+            <li class="list-group-item list-group-item-info list-group-item-action">
                 <p>{{Body}}</p>
+                <span>{{_id}} - </span>
                 <span>{{hideNumber To}}</span>
-            </div>
+                <span>{{hideNumber From}}</span>
+                <span>{{timeago createdAt}}</span>
+            </li>
             {{/each}}
-        </div>
+        </ul>
         {{else}}
         <p>No Messages Yet</p>
         {{/if}}
