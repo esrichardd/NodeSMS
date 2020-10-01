@@ -1,3 +1,6 @@
+// requiero las variables de entorno
+require('dotenv').config();
+
 const app = require('./server');
 require('./database');
 
